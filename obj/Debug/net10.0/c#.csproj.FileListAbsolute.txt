@@ -26,3 +26,4 @@
 /home/kejdo42/trash_TSPU/obj/Debug/net10.0/c#.pdb
 /home/kejdo42/trash_TSPU/obj/Debug/net10.0/c#.genruntimeconfig.cache
 /home/kejdo42/trash_TSPU/obj/Debug/net10.0/ref/c#.dll
+/home/kejdo42/trash_TSPU/obj/Debug/net10.0/c#.sourcelink.json

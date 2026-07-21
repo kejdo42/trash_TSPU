@@ -15,7 +15,7 @@ Console.WriteLine("Network connected: " + testnetwork.ipconnected);
 {
     await Task.Delay(100);
 }
-Console.WriteLine("Ping to yandex.ru: " + trash.mc + " ms");
+Console.WriteLine("Ping to " + trash.pinghost + ": " + trash.mc + " ms");
 Console.WriteLine("http status: " + httptrash.resp);
-Console.WriteLine("dns status: " + dnstrash.resp);
+Console.WriteLine("dns status to " + dnstrash.hostName + ": " + dnstrash.resp);
 }

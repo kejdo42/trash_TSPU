@@ -7,6 +7,7 @@ public class trash
 {
     public bool stoptrash = false;
     public string mc { get; private set; }
+    public string pinghost { get; private set; }
     
     public trash()
     {
@@ -19,7 +20,8 @@ public class trash
    async Task refresh()
     {
          var random = new Random();
-         var pingHost = "yandex.ru";
+         var hosts = new[] { "yandex.ru", "vk.com", "gosuslugi.ru", "sberbank.ru", "vtb.ru", "ozon.ru", "wildberries.ru", "avito.ru", "rutube.ru", "2gis.ru", "rzd.ru", "pochta.ru", "ria.ru", "rbc.ru", "gismeteo.ru" };
+        
            using (var ping = new Ping())
            {
             int maxPacketSize = 100;
@@ -30,7 +32,9 @@ public class trash
        
         int randomSize = random.Next(32, maxPacketSize + 1);
          int randomSize2 = random.Next(200, 500);
-           try
+           var pingHost = hosts[random.Next(hosts.Length)];
+         pinghost = pingHost; 
+         try
            {
               
                var reply = await ping.SendPingAsync(pingHost);

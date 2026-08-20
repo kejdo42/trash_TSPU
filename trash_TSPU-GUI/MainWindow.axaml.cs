@@ -9,6 +9,7 @@ public partial class MainWindow : Window
     trash _trashLogic = new trash();
     httptrash _httpLogic = new httptrash();
     dnstrash _dnsLogic = new dnstrash();
+      bool _isRunning = false; 
     public MainWindow()
     {
         InitializeComponent();
@@ -21,7 +22,13 @@ public partial class MainWindow : Window
         _trashLogic.stoptrash = (trash.IsChecked == false);
         _httpLogic.stophttp = (trashhttp.IsChecked == false);
         _dnsLogic.stopdns = (dnstrash.IsChecked == false);
-        while(true)
+        if(_isRunning == true)
+        {
+            return;
+        }
+        else{
+        _isRunning = true;
+        while(_isRunning)
         {
             _networkLogic.refresh();
             var logtext =
@@ -35,5 +42,10 @@ public partial class MainWindow : Window
             await Task.Delay(150);
 
         }
+        }
+}
+public void offStartClick(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+{
+  _isRunning = false;
 }
 }

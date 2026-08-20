@@ -9,7 +9,10 @@
     <CheckBox x:Name="trash" Content="trash (Включен)" IsChecked="True" />
     <CheckBox x:Name="trashhttp" Content="trashhttp (Включен)" IsChecked="True" />
     <CheckBox x:Name="dnstrash" Content="dnstrash (Включен)" IsChecked="True" />
+    <StackPanel Orientation="Horizontal">
     <Button x:Name="Start" Content="Start" Click="OnStartClick" />
+    <Button x:Name="Stop" Content="Stop" Click="offStartClick" />
+    </StackPanel>
     <TextBlock x:Name="log" />
     </StackPanel>
 </Window>

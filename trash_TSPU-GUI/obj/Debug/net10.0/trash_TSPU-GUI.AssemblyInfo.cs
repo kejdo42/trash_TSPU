@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("trash_TSPU-GUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6b78b72a76adc780eb1d2e274da4838dad8fba9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a20fd69c77598b944c5a4eb9b13e1f4680493a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("trash_TSPU-GUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("trash_TSPU-GUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,9 +6,9 @@
         x:Class="trash_TSPU_GUI.MainWindow"
         Title="trash_TSPU_GUI">
     <StackPanel>
-    <CheckBox x:Name="trash" Content="trash (Включен)" IsChecked="True" />
-    <CheckBox x:Name="trashhttp" Content="trashhttp (Включен)" IsChecked="True" />
-    <CheckBox x:Name="dnstrash" Content="dnstrash (Включен)" IsChecked="True" />
+    <CheckBox x:Name="trash" Content="trash " IsChecked="True" />
+    <CheckBox x:Name="trashhttp" Content="trashhttp " IsChecked="True" />
+    <CheckBox x:Name="dnstrash" Content="dnstrash " IsChecked="True" />
     <StackPanel Orientation="Horizontal">
     <Button x:Name="Start" Content="Start" Click="OnStartClick" />
     <Button x:Name="Stop" Content="Stop" Click="offStartClick" />

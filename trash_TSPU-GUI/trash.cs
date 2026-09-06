@@ -4,6 +4,8 @@ using System.Net.Sockets;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using System.IO;
+using System.Text.Json;
 public class trash
 {
     public bool stoptrash = false;
@@ -21,8 +23,18 @@ public class trash
    async Task refresh()
     {
          var random = new Random();
-         var hosts = new[] { "yandex.ru", "vk.com", "gosuslugi.ru", "sberbank.ru", "vtb.ru", "ozon.ru", "wildberries.ru", "avito.ru", "rutube.ru", "2gis.ru", "rzd.ru", "pochta.ru", "ria.ru", "rbc.ru", "gismeteo.ru" };
-        
+        string[] hosts; 
+         try
+         {
+         string jsonText = File.ReadAllText("config/iplist.json");
+        hosts = JsonSerializer.Deserialize<string[]>(jsonText);
+         Console.WriteLine($"{hosts.Length}");
+         }
+         catch (Exception ex)
+    {
+         pinghost = "ERROR: " + ex.Message;
+         return;
+    }
            using (var ping = new Ping())
            {
             int maxPacketSize = 100;
@@ -35,6 +47,7 @@ public class trash
          int randomSize2 = random.Next(200, 500);
            var pingHost = hosts[random.Next(hosts.Length)];
          pinghost = pingHost; 
+    
          try
            {
               

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9HiMVUACPgU=",
+  "dgSpecHash": "D1kTZ2jLap8=",
   "success": true,
   "projectFilePath": "/home/kejdo42/trash_TSPU/trash_TSPU-GUI/trash_TSPU-GUI.csproj",
   "expectedPackageFiles": [
@@ -34,7 +34,7 @@
     "/home/kejdo42/.nuget/packages/skiasharp.nativeassets.webassembly/3.119.4/skiasharp.nativeassets.webassembly.3.119.4.nupkg.sha512",
     "/home/kejdo42/.nuget/packages/skiasharp.nativeassets.win32/3.119.4/skiasharp.nativeassets.win32.3.119.4.nupkg.sha512",
     "/home/kejdo42/.nuget/packages/tmds.dbus.protocol/0.94.1/tmds.dbus.protocol.0.94.1.nupkg.sha512",
-    "/home/kejdo42/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.11/microsoft.aspnetcore.app.ref.10.0.11.nupkg.sha512"
+    "/home/kejdo42/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.12/microsoft.aspnetcore.app.ref.10.0.12.nupkg.sha512"
   ],
   "logs": []
 }
